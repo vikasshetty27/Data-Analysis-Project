@@ -78,10 +78,3 @@ scatter_3d = px.scatter_3d(
     title="3D Scatter Plot: Metrics Comparison", 
     labels={"x": "User Rating", "y": "Price Consistency", "z": "Customer Service"} 
 ) 
- 
-# Save the visualizations as an HTML file 
-dashboard_path = "/mnt/data/ECommerce_Dashboard.html" 
-fig.write_html(dashboard_path) 
-scatter_3d.write_html(dashboard_path, include_plotlyjs="cdn", full_html=True) 
- 
-dashboard_path 
